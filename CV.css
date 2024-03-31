@@ -1,0 +1,149 @@
+
+/*style pour la page de cv*/
+.page{
+    background-color: #FFFFFF;
+    margin: 15%;
+    margin-top: 5%;
+    height: 100%;
+    border-radius: 2px;
+    box-shadow: -2px -2px 48px 0px rgba(0,0,0,0.45);
+    -webkit-box-shadow: -2px -2px 48px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: -2px -2px 48px 0px rgba(0,0,0,0.45);
+}
+
+
+
+/* style pour l'en-tete*/
+.cv_title{
+    display: flex;
+    background-color: #848484;
+    height: 220px;
+    padding-top: 1px;
+    padding-right: 10% ;
+}
+
+/*style pour le nom*/
+.name{
+    font-size: 250%;
+    border-bottom: solid #000000;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+
+/*style pour filiere */
+.titre{
+    text-align: center;
+    font-size: 150%;
+    margin-left: 15%;
+}
+
+/*style pour container de l'image*/
+.im{
+    background-color: #F7E0C1;
+    margin-left: 5.6%;
+    width: 307px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0px -18px 37px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -18px 37px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -18px 37px -6px rgba(0,0,0,0.75);
+}
+
+/*style pour image*/
+img{
+   width: 200px;
+   height: 300px;
+   padding-top: 15px;
+   
+}
+
+/*style pour body*/
+.insider{
+    display: flex;
+}
+
+/*style pour colonne gauche*/
+.left_column{
+    background-color: #F7E0C1;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/*style pour les titre de colonne gauche*/
+h4{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom:1px solid #000000;
+    padding-bottom:3px;
+    width: 60%;
+    padding-left: 10px; 
+    font-size: 88%;
+}
+
+/* style pour barre de progretion des langues*/
+progress{
+    width: 100px;
+    accent-color: black;
+}
+
+.ar{
+    margin-left: 15px;
+}
+.en{
+    margin-left: 4px;
+}
+.rif{
+    margin-left: 14px;
+}
+
+
+
+
+/*style pour colonne droit*/
+.right_column{
+    padding-left: 15px;
+}
+
+
+/*titres de colone*/
+.profile_titre, .Formation , .projet{
+    background-color: #DDDDDD;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 150%;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+/*corps de formation ecole et periode d'etude*/
+.Ecole{
+    text-indent: 20px;
+    font-style: italic;
+    line-height: 5px;
+}
+
+
+/* style pour les titres de colonne droit*/
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+}
+
+/*lien hyper*/
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/*interligne des adresse*/
+address{
+    line-height: 15px;
+}
