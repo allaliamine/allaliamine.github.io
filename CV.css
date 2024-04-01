@@ -42,7 +42,7 @@
 .im{
     background-color: #F7E0C1;
     margin-left: 5.6%;
-    width: 307px;
+    width: 304px;
     margin-top: 30px;
     text-align: center;
     box-shadow: 0px -18px 37px -6px rgba(0,0,0,0.75);
@@ -81,8 +81,28 @@ h4{
     border-bottom:1px solid #000000;
     padding-bottom:3px;
     width: 60%;
-    padding-left: 10px; 
     font-size: 88%;
+    padding-left: 10px; 
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* style de coordonnee*/
+div.coordonnee section{
+    padding-left: 5px;
+}
+
+div.coordonnee h4{
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+/* style pour competence (titre et contenu)*/
+.competence{
+    line-height: 20px;
+}
+div.competence h4{
+    margin-top: 10px;
 }
 
 /* style pour barre de progretion des langues*/
