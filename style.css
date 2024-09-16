@@ -1,62 +1,72 @@
-html, body { height: 100%; }
-body {
-  background: radial-gradient(rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-  width: 100%;
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.ocean {
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
-}
 
+.box {
+    position: fixed;
+    top: 45%;
+    transform: rotate(50deg); 
+    left: 50%;
+    background-color: #015871;
+}
+  
 .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-  position: absolute;
-  width: 6400px;
-  top: -198px;
-  left: 0;
-  height: 198px;
-  transform: translate(0, 0, 0);
-  animation: wave 7s ease infinite;
+    position: absolute;
+    opacity: .4;
+    width: 2200px;
+    height: 2000px;
+    margin-left: -150px;
+    margin-top: -250px;
+    border-radius: 43%;
+    transition: opacity 0.5s ease;
+}
+  
+@keyframes rotate {
+    from {
+      transform: rotate(180deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
+}
+  
+  
+.wave.-one {
+    animation: rotate 10000ms infinite linear;
+    opacity: 15%;
+    background: #2B6F83;
+}
+  
+.wave.-two {
+    animation: rotate 6000ms infinite linear;
+    opacity: 15%;
+    background: #6AA4B0;
 }
 
-.wave:nth-of-type(2) {
-  top: -168px;
-  animation: swell 4s ease infinite;
-  opacity: 1;
-}
-
-@keyframes wave {
-  0% { margin-left: 0; }
-  100% { margin-left: -1600px;}
-}
-@keyframes swell {
-  0%, 100% {
-    transform: translate(0, -30px);
-  }
-  50% {
-    transform: translate(0, 5px);
-  }
-}
-
-
-.wavetext{
-    position: relative;
-}
-.wavetext span{
-    padding: 0px;
-}
 #Home{
-    padding-top: 10%;
-    
+    padding-top: 12%;
 }
-
+  
 #Home > h1{
     text-align: center;
+}
+
+.wavetext {
+    display: flex;
+    
+    justify-content: center;
+}
+  
+.word {
+    display: flex;
+}
+  
+.space-between {
+    display: inline-block;
+    width: 20px; /* Adjust the space between the words */
 }
 
 .wavetext span{
@@ -65,16 +75,15 @@ body {
     animation: animate 1s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
 }
-
-@keyframes animate {
+  
+@keyframes animate {  
     0%{
-        transform: translateY(0px );
+      transform: translateY(0px);
     }
     20%{
-        transform: translateY(-20px );
-    }
+      transform: translateY(-20px);
+   }
     40%,100%{
-        transform: translateY(0px );
-    }
-    
+      transform: translateY(0px);
+    }      
 }
