@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- fullpage.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.29/fullpage.min.css" integrity="sha512-cdMjnD4i86qiUIK3pyOMeYKdJ2I0gy0CVZm2AvGuXgMRDFdoIEI2I/x39pZlRsMaI4IEZBJbsNuWVawly1nY/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <!-- tailwind.css -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Document</title>
     
@@ -19,22 +21,55 @@
 
         <div class="section">
 
-            <div class="navbar navbar-light justify-content-end" style="background-color: #63ADB4;">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Project</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="bg-[#b8d8d5]">
+
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+
+                    <div class="relative flex h-16 items-center justify-between">
+                    
+                        <!-- Mobile menu button-->
+                        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                            <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-[#7da5a1] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                
+                                <!-- Icon when menu is closed -->
+                                <svg id="menu-open" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                                
+                                <!-- Icon when menu is open -->
+                                <svg id="menu-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        
+                        <!-- Desktop menu -->
+                        <div class="flex flex-1 items-center justify-center">
+                            <div class="hidden sm:block">
+                                <div class="flex space-x-4">
+                                    <a href="#Home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Home</a>
+                                    <a href="#About" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">About</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Projects</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Calendar</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Mobile menu, initially hidden -->
+                <div class="sm:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out" id="mobile-menu">
+                    <div class="space-y-1 px-2 pb-3 pt-2">
+                        <a href="#Home" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Home</a>
+                        <a href="#About" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">About</a>
+                        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Projects</a>
+                        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Calendar</a>
+                    </div>
+                </div>
+            </nav>
 
 
             <div id="Home">
@@ -44,11 +79,11 @@
                     <div class="wave -two"></div>
                 </div>
     
-                <h1>Hello, </h1>
-                <h1>My Name is <span></span></h1>
+                <h1 class="text-4xl">Hello, </h1>
+                <h1 class="text-4xl">My Name is <span></span></h1>
                 <h1> 
-                    <div class="wavetext">
-                        <div class="word">
+                    <div class="wavetext py-1">
+                        <div class="word text-4xl">
                             <span style="--i:1;">M</span>
                             <span style="--i:2;">o</span>
                             <span style="--i:3;">h</span>
@@ -60,7 +95,7 @@
                         
                         <div class="space-between"></div>
 
-                        <div class="word">
+                        <div class="word text-4xl">
                             <span style="--i:8;">A</span>
                             <span style="--i:9;">m</span>
                             <span style="--i:10;">i</span>
@@ -69,19 +104,45 @@
                     </div> 
                 </h1>
     
-                <h1>A Digital Transformation and AI student</h1>
+                <h1 class="text-4xl">A Digital Transformation and AI student</h1>
             </div>
 
         </div>
 
         <div class="section">
-            <div id="About">
+            <div id="About" class="h-screen flex items-center justify-center border-0">
+                <div class="card xl:w-10/12 mx-auto about-section bg-transparent">
 
+                    <div class="border-0 bg-transparent hover:pl-6 thover:translate-x transition-all">
+                        <h1 class="text-4xl font-bold mb-4">About Me</h1>
+                    </div>
+                
+                    <div class="border-0 bg-transparent hover:pl-6 thover:translate-x transition-all">
+                        <h3 class="text-2xl font-semibold mb-4 font-serif">Digital Transformation & AI Student</h3>
+                    </div>
+                
+                    <div class="card-body pl-0 py-0 hover:pl-6 thover:translate-x transition-all">
+                        <p class="text-lg leading-relaxed italic ">
+                            Hello, I am Mohamed Amin Allali, a dedicated and passionate student in Digital Transformation and Artificial Intelligence at the National School of Applied Sciences in Al Hoceima (ENSAH).
+                            I thrive on turning traditional processes into digital solutions that streamline tasks and boost efficiency.
+                            My goal is to leverage cutting-edge technologies to create smarter, more efficient, and optimized workflows.
+                            For more details, feel free to explore my portfolio below.
+                        </p>
+                    </div>
+                
+                </div>
+                
             </div>
             
         </div>
 
         <div class="section"> 
+            <div id="#Skills" class="h-screen flex items-center justify-center border-0">
+                <div class="rounded-lg border bg-card text-card-foreground p-6 grid gap-6 shadow-lg hover:shadow-2xl hover:translate-y-[-4px] transition-all">
+
+                </div>
+                
+            </div>
             
         </div>
 
