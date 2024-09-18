@@ -44,11 +44,11 @@
     background: #6AA4B0;
 }
 
-#Home{
+.Home{
     padding-top: 12%;
 }
   
-#Home > h1{
+.Home > h1{
     text-align: center;
 }
 

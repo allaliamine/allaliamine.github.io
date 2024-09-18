@@ -3,6 +3,8 @@ new fullpage('#fullpage', {
   autoScrolling:true,
   scrollHorizontally: true,
   loopBottom:true,
+  menu: '#menu',
+  anchors: ['Home', 'About', 'Skills', 'Projects', 'Contact'],
 });
 
 // color for pages in fullPage.js
