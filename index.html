@@ -15,12 +15,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="shortcut icon" href="/image.jpg" type="image/x-icon">
 
-
-    <title>Document</title>
+    <title>Mohamed Amin Allali</title>
     
 </head>
 <body>
+
+    <button id="moveTo">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    
+
     <div id="fullpage">
 
         <div class="section" class="Home">
@@ -53,7 +60,7 @@
                         <div class="flex flex-1 items-center justify-center">
                             <div class="hidden sm:block">
                                 <div class="flex space-x-4">
-                                    <a href="#1" data-menuanchor="Home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Home</a>
+                                    <a href="" data-menuanchor="Home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Home</a>
                                     <a href="#2" data-menuanchor="About" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">About</a>
                                     <a href="#3" data-menuanchor="Skills" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Skills</a>
                                     <a href="#4" data-menuanchor="Projects" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Projects</a>
@@ -68,7 +75,7 @@
                 <!-- Mobile menu, initially hidden -->
                 <div class="sm:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out" id="mobile-menu">
                     <div class="space-y-1 px-2 pb-3 pt-2">
-                        <a href="#1" data-menuanchor="Home" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Home</a>
+                        <a href="" data-menuanchor="Home" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Home</a>
                         <a href="#2" data-menuanchor="About" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">About</a>
                         <a href="#3" data-menuanchor="Skills" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Skills</a>
                         <a href="#4" data-menuanchor="Projects" class="block rounded-md px-3 py-2 text-base font-medium text-gray-950 hover:bg-[#7da5a1] hover:text-white">Projects</a>
@@ -366,44 +373,52 @@
 
 
 
-        <div class="section">
+        <div class="section min-h-screen flex flex-col items-center justify-center">
 
-            <div class="px-20 pb-20 pt-7 text-center fl"></div>
+            <div class="px-20 pb-20 pt-7">
 
                 <h1 class="text-5xl font-bold text-center ">Contact <span class="text-[#38938a]">Info</span></h1>
             
                 <div class="flex flex-wrap justify-center gap-4 p-4">
                     
-                    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center p-4 text-center">
-                        <a href="mailto:@gmail.com" class="text-gray-500 text-2xl mb-2">
-                            <i class="fas fa-envelope fa-xl"></i> 
+                    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center p-4 text-center relative group">
+                        <a href="mailto:amineallali9@gmail.com" class="text-gray-500 text-2xl mb-2">
+                            <i class="fas fa-envelope fa-xl"></i>
                         </a>
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Email</h5>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 bg-gray-800 text-white py-2 px-4 rounded text-sm whitespace-nowrap z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <a href="mailto:amineallali9@gmail.com" class="text-white">amineallali9@gmail.com</a>
+                        </div>
                     </div>
 
                     
-                    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center p-4 text-center">
-                        <a href="https://github.com/yourusername" class="text-gray-500 text-2xl mb-2" target="_blank">
-                            <i class="fab fa-github fa-xl"></i> 
+                    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center p-4 text-center relative group">
+                        <a href="https://github.com/allaliamine" class="text-gray-500 text-2xl mb-2" target="_blank">
+                            <i class="fab fa-github fa-xl"></i>
                         </a>
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Github</h5>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 bg-gray-800 text-white py-2 px-4 rounded text-sm whitespace-nowrap z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <a href="https://github.com/allaliamine" class="text-white">allaliamine</a>
+                        </div>
                     </div>
-
-                    
-                    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center p-4 text-center">
-                        <a href="https://linkedin.com/in/yourprofile" class="text-gray-500 text-2xl mb-2" target="_blank">
-                            <i class="fab fa-linkedin fa-xl"></i> 
+                
+                    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center p-4 text-center relative group">
+                        <a href="https://www.linkedin.com/in/m-amin-allali" class="text-gray-500 text-2xl mb-2" target="_blank">
+                            <i class="fab fa-linkedin fa-xl"></i>
                         </a>
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">LinkedIn</h5>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 bg-gray-800 text-white py-2 px-4 rounded text-sm whitespace-nowrap z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <a href="https://www.linkedin.com/in/m-amin-allali" class="text-white">M.Amin Allali</a>
+                        </div>
                     </div>
                 </div>
 
 
-                <footer class="bg-transparent py-4 bottom-0">
-                    <div class="container mx-auto text-center">
-                        <span class="text-sm text-gray-900">© 2024 Mohamed Amin Allali™. All Rights Reserved.</span>
-                    </div>
-                </footer>
+                <div class="bg-transparent rounded-lg absolute bottom-0 my-3 ms-1">
+    
+                    <span class="block text-sm text-gray-900 sm:text-center ">© 2024 Mohamed Amin Allali™</a>. All Rights Reserved.</span>
+                   
+                </div>
             </div>
             
         </div>
@@ -412,6 +427,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.29/fullpage.min.js" integrity="sha512-jedW9bHnXiSMKNbXfrEQ1gDCRYO8ewRlWPWPf4Fv1LpUyYB0fphiWlUVSGI2Dvwem1gUk0x1Y+cWs4lCwoEo8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.29/fullpage.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.29/fullpage.extensions.min.js"></script>
+
     <script src="./script.js"></script>
 </body>
 </html>

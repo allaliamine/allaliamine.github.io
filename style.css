@@ -84,3 +84,20 @@
       transform: translateY(0px);
     }      
 }
+
+#moveTo{
+    bottom: 20px;
+    left: 20px;
+    position: fixed;
+    z-index: 999;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: rgba(191, 191, 191, 0.661);
+    border-radius: 10px;
+    border-color: black; 
+}
+
+.fa-angle-up{
+    width: 50px;
+    height: 40px;
+}

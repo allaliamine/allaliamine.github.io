@@ -36,3 +36,8 @@ menuButton.addEventListener('click', () => {
   }
 });
 
+
+//adding the action to go to top button
+$(document).on('click', '#moveTo', function(){
+  fullpage_api.moveTo('Home', 1);
+});
