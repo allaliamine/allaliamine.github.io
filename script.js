@@ -1,41 +1,20 @@
 // Configuration de fullPage.js
 let myFullpage = new fullpage('#fullpage', {
-  // Configuration de base
-  autoScrolling: true,
+  // Désactiver le défilement automatique au démarrage
+  autoScrolling: false, 
   scrollHorizontally: true,
   loopBottom: true,
   menu: '#menu',
   anchors: ['Home', 'About', 'Skills', 'Projects', 'Contact'],
-  
-  // Optimisations mobiles
-  touchSensitivity: 15,
-  normalScrollElementTouchThreshold: 5,
-  
-  // Callbacks
-  afterLoad: function(origin, destination, direction) {
-    // Activer le défilement après le premier chargement
-    fullpage_api.setAllowScrolling(true);
-  },
-  
-  // Configuration responsive
-  responsiveWidth: 800,
-  responsiveHeight: 600
+  // Activer le défilement automatique après le chargement complet
+  afterRender: function() {
+    setTimeout(() => {
+      fullpage_api.setAutoScrolling(true);
+    }, 1000);
+  }
 });
 
-// Gestionnaire de chargement initial
-document.addEventListener('DOMContentLoaded', function() {
-  // Force une mise à jour du défilement
-  setTimeout(() => {
-    fullpage_api.reBuild();
-  }, 300);
-});
-
-// Optimisation tactile pour mobile
-document.addEventListener('touchstart', function() {
-  fullpage_api.setAllowScrolling(true);
-}, { once: true });
-
-// color for pages in fullPage.js
+// Couleur de fond pour les sections
 document.querySelectorAll('.section').forEach(section => {
   section.style.background = 'radial-gradient(rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%)';
 });
