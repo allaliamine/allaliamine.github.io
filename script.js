@@ -1,17 +1,10 @@
 // Configuration de fullPage.js
 let myFullpage = new fullpage('#fullpage', {
-  // Désactiver le défilement automatique au démarrage
-  autoScrolling: false, 
+  autoScrolling: true, 
   scrollHorizontally: true,
   loopBottom: true,
   menu: '#menu',
   anchors: ['Home', 'About', 'Skills', 'Projects', 'Contact'],
-  // Activer le défilement automatique après le chargement complet
-  afterRender: function() {
-    setTimeout(() => {
-      fullpage_api.setAutoScrolling(true);
-    }, 1000);
-  }
 });
 
 // Couleur de fond pour les sections
